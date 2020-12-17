@@ -12,7 +12,7 @@ let from whom =
 [<EntryPoint>]
 let main argv =
     let message = from "F#" // Call the function
-    let cubes = readCubes "/Users/xeno/projects/aoc2020/day17_fs/input2.txt"
+    let cubes = readCubes "/Users/xeno/projects/aoc2020/day17_fs/input.txt"
 //    printfn "Cubes: %A" cubes
     let space = Space (cubes)
     let space6 = [|0..5|] |> Seq.fold (fun (s:Space) i -> s.iterate()) space

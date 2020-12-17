@@ -11,7 +11,7 @@ let readFile (filePath:String) = seq {
 } 
 
 let toCube (x:int) (y:int) (stateChar:char) : Cube =
-    let pos = Position(x |> int64, y |> int64, 0L)
+    let pos = Position(x |> int64, y |> int64, 0L, 0L)
     let state = if stateChar = '#' then ON else OFF
     Cube (state,pos) 
 
